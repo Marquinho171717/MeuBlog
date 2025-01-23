@@ -21,19 +21,21 @@ body,
 }
 
 /*esttilizar o cabeçalho*/
-header div {
 
+header {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+}
+
+header div {
     display: flex;
     align-items: center;
-
-
-
 }
 
 header h1 {
     margin: 0;
     font-size: 1.5rem;
-
 }
 
 header img {
@@ -65,11 +67,11 @@ form button {
 }
 
 body {
-    background-image: url(/img/anonimous\ azul\ e\ branco.jpg);
+    /* background-image: url(/img/anonimous\ azul\ e\ branco.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    /* background: linear-gradient(rgb(248, 244, 244), rgb(6, 164, 255));*/
+    background-size: cover;*/
+    background: linear-gradient(rgb(248, 244, 244), rgb(6, 164, 255));
 }
 
 /* Menu principal */
@@ -116,7 +118,7 @@ button {
 
 }
 
-#interacaoUsuario img {
+#usuarioAcao img {
     max-width: 80%;
     /* Ajuste o tamanho conforme necessário */
 
@@ -125,8 +127,9 @@ button {
     color: #faf9f9;
 
 }
+
 article {
-color: #faf9f9;
+    color: #faf9f9;
 
 }
 
@@ -138,3 +141,24 @@ color: #faf9f9;
 main {
     flex-grow: 1;
 }
+
+/* Para larguras de 640px ou mais */
+@media screen and (min-width: 640px) {
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 1px solid #000;
+    }
+
+    header form {
+        padding: 1.5rem;
+    }
+
+}
+footer {
+    background-color: rgb(22, 211, 218);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
