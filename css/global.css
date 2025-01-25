@@ -23,7 +23,7 @@ body,
 /*esttilizar o cabeçalho*/
 
 header {
-    background-color: rgb(255, 255, 255);
+    background: linear-gradient(black,rgb(6, 164, 255),pink);
     display: flex;
     flex-direction: column;
 }
@@ -46,7 +46,7 @@ header img {
 }
 
 header form {
-    background: rgb(204, 238, 252);
+    background: linear-gradient (black rgb(6, 164, 255),pink);
     padding: 1rem;
     display: flex;
 }
@@ -71,13 +71,13 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;*/
-    background: linear-gradient(rgb(248, 244, 244), rgb(6, 164, 255));
+    background: linear-gradient(black,rgb(6, 164, 255),pink);
 }
 
 /* Menu principal */
 
 nav {
-    background-color: rgb(22, 211, 218);
+    background-color:rgb(6, 164, 255);
     display: flex;
 }
 
@@ -103,8 +103,9 @@ nav span {
 }
 
 a {
-    color: steelblue;
+    color: rgb(6, 164, 255);
     text-decoration: none;
+    
 }
 
 a:hover {
@@ -124,12 +125,12 @@ button {
 
     height: auto;
     /* Mantém a proporção da imagem */
-    color: #faf9f9;
+    color: black;
 
 }
 
 article {
-    color: #faf9f9;
+    color:white;
 
 }
 
@@ -157,8 +158,19 @@ main {
 
 }
 footer {
-    background-color: rgb(22, 211, 218);
+    background: linear-gradient(black,rgb(6, 164, 255),pink);
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: #fff;
+}
+
+footer  a {
+color: #fff;
+
+}
+
+footer a:hover{
+color: #000;
+
+}
