@@ -124,11 +124,7 @@ function template(){
 
         <main>
 
-            <article>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore soluta illum atque totam porro
-                odit unde, quae, veritatis accusantium officiis temporibus voluptatibus eveniet asperiores aut facilis
-                suscipit debitis vitae id!</article>
-
-
+            
         </main>
 
         <footer>
