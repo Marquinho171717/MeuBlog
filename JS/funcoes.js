@@ -77,6 +77,12 @@ function _(seletor) {
     }
     return document.querySelectorAll(seletor);
 }
+/**
+ * Login no firebase Authentication
+ */
+function fbSigIn(){
+    firebase.auth().signInWithPopup(provider);
+}
 
 function template(){
 
@@ -116,13 +122,13 @@ function template(){
                 <span>Sobre</span>
             </a>
 
-            <a href="login.html" id="usuarioAcao" title="Logue-se no site">
+            <a href="login.html" id="usuarioAcao" title="Logue-se no site"data-acao="login">
                 <img src="img/hacker.png" alt="Faça login">
                 <span>Login</span>
             </a>
         </nav>
 
-        <main>
+        <main id="conteudo">
 
             
         </main>
