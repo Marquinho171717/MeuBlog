@@ -83,6 +83,9 @@ function _(seletor) {
 function fbSigIn(){
     firebase.auth().signInWithPopup(provider);
 }
+function fbSignOut() {
+    firebase.auth().signOut();
+}
 
 function template(){
 
@@ -123,7 +126,7 @@ function template(){
             </a>
 
             <a href="login.html" id="usuarioAcao" title="Logue-se no site"data-acao="login">
-                <img src="img/hacker.png" alt="Faça login">
+                <img src="img/hacker.png" alt="Faça login" referrerpolicy="no-referrer">
                 <span>Login</span>
             </a>
         </nav>
